@@ -15,7 +15,8 @@
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test-interactive": "react-scripts test --env=jsdom",
+    "test-all": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
