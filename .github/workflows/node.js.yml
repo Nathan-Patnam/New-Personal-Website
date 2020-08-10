@@ -37,3 +37,9 @@ jobs:
 
       - name: 'Run Tests'
         run: yarn test-all
+        
+      - name: 'Upload Code Coverage Results'
+        uses: actions/checkout@master
+        with:
+          file: ./coverage.xml
+
