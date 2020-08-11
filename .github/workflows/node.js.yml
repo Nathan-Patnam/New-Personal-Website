@@ -37,3 +37,9 @@ jobs:
 
       - name: 'Run Tests'
         run: yarn test-with-code-coverage
+        
+      - name: 'Upload Code Coverage Results'
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODE_COV_KEY }}
+          file: ./coverage/clover.xml
