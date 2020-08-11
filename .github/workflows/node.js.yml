@@ -41,4 +41,5 @@ jobs:
       - name: 'Upload Code Coverage Results'
         uses: actions/checkout@master
         with:
+          token: ${{ secrets.CODE_COV_KEY }}
           file: ./coverage/clover.xml
