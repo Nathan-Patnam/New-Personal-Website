@@ -39,14 +39,15 @@ jobs:
             ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-
 
       - name: Install Yarn Dependencies if Cache Not Found
-        run: yarn
+        run: yarn && ls
         if: |
           steps.cache-yarn-cache.outputs.cache-hit != 'true' ||
           steps.cache-node-modules.outputs.cache-hit != 'true'
+        working-directory: ./../
 
       - name: Run Tests
         run: yarn test-with-code-coverage
-        working-directory: ../
+        working-directory: ./../
 
       - name: Upload Code Coverage Results
         uses: codecov/codecov-action@v1
