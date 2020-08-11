@@ -29,16 +29,25 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: 'Install Yarn'
-        uses: actions/checkout@v2
+      - name: Cache node_modules
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-
 
-      - name: 'Install Dependencies'
-        run: yarn install
+      - name: Install Yarn Dependencies if Cache Not Found
+        run: yarn
+        if: |
+          steps.cache-yarn-cache.outputs.cache-hit != 'true' ||
+          steps.cache-node-modules.outputs.cache-hit != 'true'
 
-      - name: 'Run Tests'
+      - name: Run Tests
         run: yarn test-with-code-coverage
-        
-      - name: 'Upload Code Coverage Results'
+
+      - name: Upload Code Coverage Results
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODE_COV_KEY }}
