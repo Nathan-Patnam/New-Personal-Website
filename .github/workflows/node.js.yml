@@ -46,7 +46,7 @@ jobs:
 
       - name: Run Tests
         run: yarn test-with-code-coverage
-        working-directory: ./
+        working-directory: ../
 
       - name: Upload Code Coverage Results
         uses: codecov/codecov-action@v1
