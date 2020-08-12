@@ -9,6 +9,7 @@ function App() {
   return (
     <div className='App'>
       <Header />
+      <div> My name is Nathan Patnam</div>
       <Router>
         <Route exact path='/projects'>
           <Projects />

@@ -6,5 +6,5 @@ afterEach(cleanup);
 
 test('Renders Home Component', () => {
   const { getByText } = render(<App />);
-  expect(getByText('Learn React')).toBeTruthy();
+  expect(getByText('My name is Nathan Patnam')).toBeTruthy();
 });
