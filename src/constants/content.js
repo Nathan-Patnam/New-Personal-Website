@@ -6,9 +6,11 @@ export const NAVIGATION_HEADERS = [
   { title: 'Projects', url: 'projects' },
 ];
 
+export const PROJECT_FILTER_BUTTONS = ['All', 'Videos', 'Apps', 'Articles'];
+
 export const PROJECTS = [
   {
-    type: ['VIDEO', 'APP'],
+    type: ['Videos', 'Apps'],
     imagePath: './img/projects/heroku-demo.jpg',
     imageAltDescription: 'Purple Power Point cover page',
     title: 'GitHub-Issue Triage Tool',
@@ -20,7 +22,7 @@ export const PROJECTS = [
     date: 'Summer 2019',
   },
   {
-    type: ['APP'],
+    type: ['Apps'],
     imagePath: './img/projects/real-estate.png',
     imageAltDescription: 'list of housing properties with filters',
     title: 'Real Estate App',
@@ -32,7 +34,7 @@ export const PROJECTS = [
     date: 'April 2019',
   },
   {
-    type: ['APP'],
+    type: ['Apps'],
     imagePath: './img/projects/facebook-clone.png',
     imageAltDescription: 'Profile page that resembles Facebook UI',
     title: 'Facebook clone',
@@ -44,7 +46,7 @@ export const PROJECTS = [
     date: 'March 2018',
   },
   {
-    type: ['VIDEO'],
+    type: ['Videos'],
     imagePath: './img/projects/queue.jpg',
     imageAltDescription: 'powerpoint presentation with title about queues',
     title: 'What is a Queue',
@@ -57,10 +59,10 @@ export const PROJECTS = [
     date: 'March 2018',
   },
   {
-    type: ['VIDEO'],
+    type: ['Videos'],
     imagePath: './img/projects/queue.jpg',
     imageAltDescription: 'powerpoint presentation with title about queues',
-    title: 'What is a Queue',
+    title: 'What is a Queudqwd',
     description:
       'Youtube video I created about the queue data structure and how to implement it in Python',
     tags: ['Pytest', 'Python'],
@@ -70,7 +72,7 @@ export const PROJECTS = [
     date: 'March 2018',
   },
   {
-    type: ['VIDEO'],
+    type: ['Videos'],
     imagePath: './img/projects/stack.jpg',
     imageAltDescription: 'powerpoint presentation with title about stacks',
     title:
@@ -83,7 +85,7 @@ export const PROJECTS = [
     date: 'Feb 2018',
   },
   {
-    type: ['ARTICLE'],
+    type: ['Articles'],
     imagePath: './img/projects/unit-testing.png',
     imageAltDescription: 'Terminal Screenshot of failing unit test',
     title: 'What Is Polymorphism — and How Do We Implement It in Python',
@@ -96,7 +98,7 @@ export const PROJECTS = [
     date: 'Jan 29 2020',
   },
   {
-    type: ['ARTICLE'],
+    type: ['Articles'],
     imagePath: null,
     imageAltDescription: null,
     title: 'How Python Lazily Evaluates Boolean-Based Expressions',
@@ -109,7 +111,7 @@ export const PROJECTS = [
     date: 'Jan 27 2020',
   },
   {
-    type: ['ARTICLE'],
+    type: ['Articles'],
     imagePath: './img/projects/unit-testing.png',
     imageAltDescription: 'Terminal Screenshot of failing unit test',
     title: 'Unit Testing in Python',
@@ -122,7 +124,7 @@ export const PROJECTS = [
     date: 'Feb 2018',
   },
   {
-    type: ['APP'],
+    type: ['Apps'],
     imagePath: './img/projects/java-argument-parser.png',
     imageAltDescription:
       'Final Presentation for Capstone Class where I created this Java package',
@@ -142,7 +144,7 @@ export const PROJECTS = [
     date: 'Fall 2017',
   },
   {
-    type: ['APP'],
+    type: ['Apps'],
     imagePath: './img/projects/needlexchange.jpg',
     imageAltDescription: '',
     title: 'NeedleXchange',
