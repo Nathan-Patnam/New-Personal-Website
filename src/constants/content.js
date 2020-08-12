@@ -6,6 +6,15 @@ export const NAVIGATION_HEADERS = [
   { title: 'Projects', url: 'projects' },
 ];
 
+export const FOOTER_ICONS = [
+  { type: 'Linkedin', link: '' },
+  { type: 'GitHub', link: '' },
+  { type: 'Medium', link: '' },
+  { type: 'Email', link: '' },
+  { type: 'Resume', link: '' },
+  { type: 'Youtube', link: '' },
+];
+
 export const PROJECT_FILTER_BUTTONS = ['All', 'Videos', 'Apps', 'Articles'];
 
 export const PROJECTS = [
