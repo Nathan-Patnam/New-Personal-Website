@@ -1,6 +1,6 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import Header from '../../components/Header';
+import { render } from '@testing-library/react';
+import Header from '../../components/header';
 import { NAVIGATION_HEADERS } from '../../constants/content';
 
 test('Render correct numbers of nav links', () => {
