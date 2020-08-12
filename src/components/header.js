@@ -21,13 +21,6 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const classes = useStyles();
 
-  const sections = [
-    { title: 'About', url: 'about' },
-    { title: 'Experience', url: 'experience' },
-    { title: 'Service', url: 'services' },
-    { title: 'Projects', url: 'projects' },
-  ];
-
   return (
     <Toolbar
       component='nav'
