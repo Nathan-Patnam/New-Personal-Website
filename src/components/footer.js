@@ -33,8 +33,6 @@ export const Icon = ({ type }) => {
       return <FaFile />;
     case 'Youtube':
       return <FaYoutube />;
-    default:
-      return null;
   }
 };
 
