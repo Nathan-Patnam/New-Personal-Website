@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import { Tab, Tabs } from '@material-ui/core';
 import { NAVIGATION_HEADERS } from '../constants/content';
 

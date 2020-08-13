@@ -20,8 +20,9 @@ export const PROJECT_FILTER_BUTTONS = ['All', 'Videos', 'Apps', 'Articles'];
 export const PROJECTS = [
   {
     type: ['Videos', 'Apps'],
-    imagePath: './img/projects/heroku-demo.jpg',
-    imageAltDescription: 'Purple Power Point cover page',
+    imagePath: require('../assets/img/projects/herokuDemo.jpg'),
+    imageAltDescription:
+      "A PowerPoint Title Screen that has 'GitHub Triage Tool' for the title and my name",
     title: 'GitHub-Issue Triage Tool',
     description:
       'Web Service I built during my internship at Heroku what automated the long & tedious process of adding issues created in GitHub to Salesforce"s Grand Unified Ticketing System (GUS).',
@@ -32,11 +33,11 @@ export const PROJECTS = [
   },
   {
     type: ['Apps'],
-    imagePath: './img/projects/real-estate.png',
+    imagePath: require('../assets/img/projects/realEstate.png'),
     imageAltDescription: 'list of housing properties with filters',
     title: 'Real Estate App',
     description:
-      'Progressive Web App that will allow the user to filter and search through all the available listing. Currently using dummy data.',
+      'Progressive React Web App that allows users to filter and search through all the available listing near them.',
     tags: ['React', 'SASS', 'CSS', 'HTML', 'Javascript', 'jQuery', 'Bootstrap'],
     viewLink: '',
     githubLink: null,
@@ -44,7 +45,7 @@ export const PROJECTS = [
   },
   {
     type: ['Apps'],
-    imagePath: './img/projects/facebook-clone.png',
+    imagePath: require('../assets/img/projects/facebookClone.png'),
     imageAltDescription: 'Profile page that resembles Facebook UI',
     title: 'Facebook clone',
     description:
@@ -56,7 +57,7 @@ export const PROJECTS = [
   },
   {
     type: ['Videos'],
-    imagePath: './img/projects/queue.jpg',
+    imagePath: require('../assets/img/projects/herokuDemo.jpg'),
     imageAltDescription: 'powerpoint presentation with title about queues',
     title: 'What is a Queue',
     description:
@@ -69,7 +70,7 @@ export const PROJECTS = [
   },
   {
     type: ['Videos'],
-    imagePath: './img/projects/queue.jpg',
+    imagePath: require('../assets/img/projects/herokuDemo.jpg'),
     imageAltDescription: 'powerpoint presentation with title about queues',
     title: 'What is a Queudqwd',
     description:
@@ -82,7 +83,7 @@ export const PROJECTS = [
   },
   {
     type: ['Videos'],
-    imagePath: './img/projects/stack.jpg',
+    imagePath: require('../assets/img/projects/herokuDemo.jpg'),
     imageAltDescription: 'powerpoint presentation with title about stacks',
     title:
       'Implementing a Stack in Python with Memory Management and Error Handling',
@@ -95,7 +96,7 @@ export const PROJECTS = [
   },
   {
     type: ['Articles'],
-    imagePath: './img/projects/unit-testing.png',
+    imagePath: require('../assets/img/projects/herokuDemo.jpg'),
     imageAltDescription: 'Terminal Screenshot of failing unit test',
     title: 'What Is Polymorphism — and How Do We Implement It in Python',
     description:
@@ -108,7 +109,7 @@ export const PROJECTS = [
   },
   {
     type: ['Articles'],
-    imagePath: null,
+    imagePath: require('../assets/img/projects/herokuDemo.jpg'),
     imageAltDescription: null,
     title: 'How Python Lazily Evaluates Boolean-Based Expressions',
     description:
@@ -121,7 +122,7 @@ export const PROJECTS = [
   },
   {
     type: ['Articles'],
-    imagePath: './img/projects/unit-testing.png',
+    imagePath: require('../assets/img/projects/herokuDemo.jpg'),
     imageAltDescription: 'Terminal Screenshot of failing unit test',
     title: 'Unit Testing in Python',
     description:
@@ -134,7 +135,7 @@ export const PROJECTS = [
   },
   {
     type: ['Apps'],
-    imagePath: './img/projects/java-argument-parser.png',
+    imagePath: require('../assets/img/projects/herokuDemo.jpg'),
     imageAltDescription:
       'Final Presentation for Capstone Class where I created this Java package',
     title: 'Java Argument Parser',
@@ -154,7 +155,7 @@ export const PROJECTS = [
   },
   {
     type: ['Apps'],
-    imagePath: './img/projects/needlexchange.jpg',
+    imagePath: require('../assets/img/projects/needlExchange.jpg'),
     imageAltDescription: '',
     title: 'NeedleXchange',
     description:
