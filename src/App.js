@@ -1,21 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/header';
 import Footer from './components/footer';
 import Projects from './screens/projects';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { TabPanel, TabContext } from '@material-ui/lab';
 
 function App() {
+  const [pageToShow, setPageToShow] = useState('Home');
+
+  const changePageToShow = (event, pageToShow) => {
+    setPageToShow(pageToShow);
+  };
+
   return (
     <div className='App'>
-      <Header />
+      <Header pageToShow={pageToShow} changePageToShow={changePageToShow} />
       <div> My name is Nathan Patnam</div>
-      <Router>
-        <Route exact path='/projects'>
+
+      <TabContext value={pageToShow}>
+        <TabPanel value={'Home'}>Home</TabPanel>
+        <TabPanel value={'About'}>About</TabPanel>
+        <TabPanel value={'Experience'}>Experience</TabPanel>
+        <TabPanel value={'Services'}>Services</TabPanel>
+        <TabPanel value={'Projects'}>
           <Projects />
-        </Route>
-      </Router>
+        </TabPanel>
+      </TabContext>
       <Footer />
     </div>
   );
