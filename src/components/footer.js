@@ -1,14 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaMediumM,
-  FaEnvelope,
-  FaFile,
-  FaYoutube,
-} from 'react-icons/fa';
+import EventIcon from '@material-ui/icons/Event';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
+import NoteIcon from '@material-ui/icons/Note';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import { ReactComponent as MediumIcon } from '../assets/img/icons/medium.svg';
+import { SvgIcon } from '@material-ui/core';
 
 import { FOOTER_ICONS } from '../constants/content';
 
@@ -22,17 +22,19 @@ const useStyles = makeStyles((theme) => ({
 export const Icon = ({ type }) => {
   switch (type) {
     case 'Linkedin':
-      return <FaLinkedinIn />;
+      return <LinkedInIcon />;
     case 'GitHub':
-      return <FaGithub />;
+      return <GitHubIcon />;
     case 'Medium':
-      return <FaMediumM />;
+      return <SvgIcon component={MediumIcon} viewBox='0 0 600 476.6' />;
     case 'Email':
-      return <FaEnvelope />;
+      return <EmailIcon />;
     case 'Resume':
-      return <FaFile />;
+      return <NoteIcon />;
     case 'Youtube':
-      return <FaYoutube />;
+      return <YouTubeIcon />;
+    case 'Calendly':
+      return <EventIcon />;
     default:
       return null;
   }
