@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Home, { AboutMe, FeaturedArticles } from '../../screens/home';
+import Home, {
+  AboutMe,
+  FeaturedArticles,
+  FeaturedProjects,
+} from '../../screens/home';
 import Typography from '@material-ui/core/Typography';
 
 test('Renders Home Screen Correctly', () => {
@@ -15,5 +19,10 @@ test('Renders AboutMe Component Correctly', () => {
 
 test('Renders FeaturedArticles Component Correctly', () => {
   const wrapper = shallow(<FeaturedArticles />);
+  expect(wrapper.find(Typography)).toHaveLength(1);
+});
+
+test('Renders FeaturedProjects Component Correctly', () => {
+  const wrapper = shallow(<FeaturedProjects />);
   expect(wrapper.find(Typography)).toHaveLength(1);
 });

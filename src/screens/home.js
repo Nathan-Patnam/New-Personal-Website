@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import '../styles/screens/projects.css';
-import { PROJECTS, PROJECT_FILTER_BUTTONS } from '../constants/content.js';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
@@ -28,6 +27,20 @@ export const AboutMe = () => {
   );
 };
 
+export const FeaturedProjects = () => {
+  return (
+    <Fragment>
+      <Typography
+        component='div'
+        align='left'
+        style={{ backgroundColor: '#cfe8fc' }}
+      >
+        Featured Work
+      </Typography>
+    </Fragment>
+  );
+};
+
 export const FeaturedArticles = () => {
   return (
     <Fragment>
@@ -47,6 +60,7 @@ const Home = () => {
   return (
     <Container maxWidth='xl'>
       <AboutMe />
+      <FeaturedProjects />
       <FeaturedArticles />
     </Container>
   );
