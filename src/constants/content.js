@@ -5,7 +5,8 @@ export const NAVIGATION_HEADERS = [
   { title: 'Resume', url: '/' },
 ];
 
-export const RESUME_LINK = 'http://www.google.com/';
+export const RESUME_LINK =
+  'https://drive.google.com/file/d/1jr5YxjCF1HYgWsUKv_t8Simzrz8WV5CX/view';
 
 export const FOOTER_ICONS = [
   { type: 'Linkedin', link: 'https://www.linkedin.com/in/nathan-patnam/' },
