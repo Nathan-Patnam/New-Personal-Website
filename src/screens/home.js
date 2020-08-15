@@ -12,15 +12,16 @@ export const AboutMe = () => {
         align='left'
         style={{ backgroundColor: '#cfe8fc' }}
       >
-        I'm an experienced software engineer who has a passion for building
-        tools to increase developer productivity as well as .
+        I'm an experienced software engineer who is passionate about building
+        tools to increase developer productivity and empower users to achieve
+        more.
       </Typography>
       <Typography
         component='div'
         align='left'
         style={{ backgroundColor: '#cfe8fc' }}
       >
-        Currently I'm, a Full-Stack Engineer @ Salesforce and pursuing a Masters
+        I'm currently a Full-Stack Engineer @ Salesforce and pursuing a Masters
         in Computer Science at Georgia Tech.
       </Typography>
     </Fragment>
@@ -44,7 +45,7 @@ export const FeaturedArticles = () => {
 
 const Home = () => {
   return (
-    <Container maxWidth='lg'>
+    <Container maxWidth='xl'>
       <AboutMe />
       <FeaturedArticles />
     </Container>
