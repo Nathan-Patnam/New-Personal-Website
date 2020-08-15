@@ -28,18 +28,18 @@ const RecipeReviewCard = ({ props }) => {
 
   return (
     <Card className={classes.root}>
-      <CardHeader
-        avatar={<div>wow</div>}
-        action={<div>View</div>}
-        title={props.title}
-        subheader={props.date}
-      />
       <CardMedia
         className={classes.media}
-        image='/static/images/cards/paella.jpg'
+        image={props.imagePath}
         title='Paella dish'
       />
       <CardContent>
+        <Typography variant='body2' color='textSecondary' component='p'>
+          {props.title}
+        </Typography>
+        <Typography variant='body2' color='textSecondary' component='p'>
+          {props.date}
+        </Typography>
         <Typography variant='body2' color='textSecondary' component='p'>
           {props.description}
         </Typography>
