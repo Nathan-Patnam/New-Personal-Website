@@ -1,14 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaMediumM,
-  FaEnvelope,
-  FaFile,
-  FaYoutube,
-} from 'react-icons/fa';
+import EventIcon from '@material-ui/icons/Event';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
+import NoteIcon from '@material-ui/icons/Note';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import { ReactComponent as MediumIcon } from '../assets/img/icons/medium.svg';
+import { IconButton } from '@material-ui/core';
 
 import { FOOTER_ICONS } from '../constants/content';
 
@@ -19,20 +19,69 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Icon = ({ type }) => {
+export const Icon = ({ type, link }) => {
+  const openLinkInNewTab = () => {
+    window.open(link, '_blank');
+  };
+
   switch (type) {
     case 'Linkedin':
-      return <FaLinkedinIn />;
+      return (
+        <IconButton
+          onClick={openLinkInNewTab}
+          component={LinkedInIcon}
+          color={'inherit'}
+        />
+      );
     case 'GitHub':
-      return <FaGithub />;
+      return (
+        <IconButton
+          onClick={openLinkInNewTab}
+          component={GitHubIcon}
+          color={'inherit'}
+        />
+      );
     case 'Medium':
-      return <FaMediumM />;
+      return (
+        <IconButton
+          style={{ width: 24, height: 24 }}
+          onClick={openLinkInNewTab}
+          component={MediumIcon}
+          color={'inherit'}
+        />
+      );
     case 'Email':
-      return <FaEnvelope />;
+      return (
+        <IconButton
+          onClick={openLinkInNewTab}
+          component={EmailIcon}
+          color={'inherit'}
+        />
+      );
     case 'Resume':
-      return <FaFile />;
+      return (
+        <IconButton
+          onClick={openLinkInNewTab}
+          component={NoteIcon}
+          color={'inherit'}
+        />
+      );
     case 'Youtube':
-      return <FaYoutube />;
+      return (
+        <IconButton
+          onClick={openLinkInNewTab}
+          component={YouTubeIcon}
+          color={'inherit'}
+        />
+      );
+    case 'Calendly':
+      return (
+        <IconButton
+          onClick={openLinkInNewTab}
+          component={EventIcon}
+          color={'inherit'}
+        />
+      );
     default:
       return null;
   }
@@ -47,7 +96,13 @@ const Footer = () => {
         Follow Me On:
         <div>
           {FOOTER_ICONS.map((footerIcon) => {
-            return <Icon type={footerIcon.type} key={footerIcon.type} />;
+            return (
+              <Icon
+                type={footerIcon.type}
+                link={footerIcon.link}
+                key={footerIcon.type}
+              />
+            );
           })}
         </div>
       </Typography>
