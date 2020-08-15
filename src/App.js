@@ -19,13 +19,11 @@ function App() {
       <div> My name is Nathan Patnam</div>
 
       <TabContext value={pageToShow}>
-        <TabPanel value={'Home'}>Home</TabPanel>
-        <TabPanel value={'About'}>About</TabPanel>
-        <TabPanel value={'Experience'}>Experience</TabPanel>
-        <TabPanel value={'Services'}>Services</TabPanel>
-        <TabPanel value={'Projects'}>
+        <TabPanel value={'Home'}>
           <Projects />
         </TabPanel>
+        <TabPanel value={'About'}>About</TabPanel>
+        <TabPanel value={'Experience'}>Experience</TabPanel>
       </TabContext>
       <Footer />
     </div>
