@@ -9,16 +9,19 @@ export const RESUME_LINK =
   'https://drive.google.com/file/d/1jr5YxjCF1HYgWsUKv_t8Simzrz8WV5CX/view';
 
 export const FOOTER_ICONS = [
-  { type: 'Linkedin', link: 'https://www.linkedin.com/in/nathan-patnam/' },
-  { type: 'Calendly', link: 'https://calendly.com/nathanpatnam' },
+  {
+    type: 'Linkedin',
+    link: 'https://www.linkedin.com/in/nathan-patnam/',
+  },
   { type: 'GitHub', link: 'https://github.com/Nathan-Patnam' },
   { type: 'Medium', link: 'https://medium.com/@nathanpatnam' },
   { type: 'Email', link: 'mailto:nathanpatnam@gmail.com' },
-  { type: 'Resume', link: '' },
+  { type: 'Resume', link: RESUME_LINK },
   {
     type: 'Youtube',
     link: 'https://www.youtube.com/user/vert3737/videos',
   },
+  { type: 'Calendly', link: 'https://calendly.com/nathanpatnam' },
 ];
 
 export const PROJECT_FILTER_BUTTONS = ['All', 'Videos', 'Apps', 'Articles'];
