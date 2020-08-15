@@ -134,6 +134,7 @@ export const ARTICLES_WRITTEN = [
       "1st Medium Article I'm writing for GiftPocket's engineering blog about how we unit test helper function in the new React Native rebuild of our app using Jest.",
     tags: ['JavaScript', 'Jest', 'React Native', 'Testing'],
     viewLink: null,
+    length: '4',
     date: 'Coming Soon',
   },
   {
@@ -144,6 +145,7 @@ export const ARTICLES_WRITTEN = [
       'Medium Article I am writing about how we can use Frisby, a JavaScript-based testing framework, to test APIs.',
     tags: ['JavaScript', 'Jest', 'APIs', 'Testing', 'Frisby'],
     viewLink: null,
+    length: '4',
     date: 'Coming Soon',
   },
   {
@@ -155,7 +157,8 @@ export const ARTICLES_WRITTEN = [
     tags: ['Python', 'PyTest', 'Testing', 'Object-Oriented Programing'],
     viewLink:
       'https://medium.com/better-programming/what-is-polymorphism-and-how-to-implement-it-in-python-391683307543?source=friends_link&sk=5c80415f07d5b2ab465637d6e17556db',
-    date: new Date(2020, 0, 29),
+    length: '4',
+    date: 'Jan 27 2029',
   },
   {
     imagePath: require('../assets/img/projects/herokuDemo.jpg'),
@@ -166,7 +169,8 @@ export const ARTICLES_WRITTEN = [
     tags: ['Python'],
     viewLink:
       'https://medium.com/better-programming/how-python-lazily-evaluates-boolean-based-expressions-fc9d55d20d8d?source=friends_link&sk=3b5620a2da66a77052e3881f4aa6b5b9',
-    date: new Date(2020, 0, 27),
+    length: '4',
+    date: 'Jan 27 2020',
   },
   {
     imagePath: require('../assets/img/projects/herokuDemo.jpg'),
@@ -177,7 +181,8 @@ export const ARTICLES_WRITTEN = [
     tags: ['Python', 'PyTest', 'Testing', 'Code Coverage'],
     viewLink:
       'https://medium.com/@nathanpatnam/what-is-unit-testing-code-coverage-and-how-to-implement-and-use-them-in-python-a8f029558fe7',
-    date: new Date(2018, 2, 17),
+    length: '4',
+    date: 'Feb 17 2018',
   },
   {
     imagePath: require('../assets/img/projects/herokuDemo.jpg'),
@@ -188,6 +193,7 @@ export const ARTICLES_WRITTEN = [
     tags: ['Web Development', 'Freelance'],
     viewLink:
       'https://medium.com/@nathanpatnam/my-experiences-freelancing-first-30-days-43e0ef0ac2ca',
-    date: new Date(2018, 2, 15),
+    length: '4',
+    date: 'Feb 15 2018',
   },
 ];

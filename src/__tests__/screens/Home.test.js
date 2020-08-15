@@ -6,6 +6,8 @@ import Home, {
   FeaturedProjects,
 } from '../../screens/home';
 import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
+import { ARTICLES_WRITTEN } from '../../constants/content';
 
 test('Renders Home Screen Correctly', () => {
   const wrapper = shallow(<Home />);
@@ -19,7 +21,7 @@ test('Renders AboutMe Component Correctly', () => {
 
 test('Renders FeaturedArticles Component Correctly', () => {
   const wrapper = shallow(<FeaturedArticles />);
-  expect(wrapper.find(Typography)).toHaveLength(1);
+  expect(wrapper.find(Card)).toHaveLength(ARTICLES_WRITTEN.length);
 });
 
 test('Renders FeaturedProjects Component Correctly', () => {
