@@ -2,7 +2,10 @@ export const NAVIGATION_HEADERS = [
   { title: 'Home', url: '/' },
   { title: 'About', url: 'about' },
   { title: 'Experience', url: 'experience' },
+  { title: 'Resume', url: '/' },
 ];
+
+export const RESUME_LINK = 'http://www.google.com/';
 
 export const FOOTER_ICONS = [
   { type: 'Linkedin', link: 'https://www.linkedin.com/in/nathan-patnam/' },
