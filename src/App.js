@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/header';
 import Footer from './components/footer';
-import Projects from './screens/projects';
+import Home from './screens/home';
 
 import { TabPanel, TabContext } from '@material-ui/lab';
 
@@ -20,7 +20,7 @@ function App() {
 
       <TabContext value={pageToShow}>
         <TabPanel value={'Home'}>
-          <Projects />
+          <Home />
         </TabPanel>
         <TabPanel value={'About'}>About</TabPanel>
         <TabPanel value={'Experience'}>Experience</TabPanel>
