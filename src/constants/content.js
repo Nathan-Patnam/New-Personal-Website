@@ -132,9 +132,8 @@ export const ARTICLES_WRITTEN = [
     title: 'How GiftPocket Uses Jest to Write Unit Tests',
     description:
       "1st Medium Article I'm writing for GiftPocket's engineering blog about how we unit test helper function in the new React Native rebuild of our app using Jest.",
-    tags: ['JavaScript', 'Jest', 'React Native', 'Testing'],
-    viewLink: null,
-    length: '4',
+    viewLink: 'https://medium.com/@nathanpatnam',
+    length: '',
     date: 'Coming Soon',
   },
   {
@@ -142,10 +141,9 @@ export const ARTICLES_WRITTEN = [
     imageAltDescription: 'TODO',
     title: 'Automate Testing REST APIs with Frisby',
     description:
-      'Medium Article I am writing about how we can use Frisby, a JavaScript-based testing framework, to test APIs.',
-    tags: ['JavaScript', 'Jest', 'APIs', 'Testing', 'Frisby'],
-    viewLink: null,
-    length: '4',
+      "Article I'm currently writing about how we can use Frisby, a JavaScript-based testing framework, to easily test REST APIs.",
+    viewLink: 'https://medium.com/@nathanpatnam',
+    length: '',
     date: 'Coming Soon',
   },
   {
@@ -154,11 +152,10 @@ export const ARTICLES_WRITTEN = [
     title: 'What Is Polymorphism — and How Do We Implement It in Python',
     description:
       'Medium Article explaining what polymorphism is through a couple of examples in Python. Article was published on my behalf by Better Programming.',
-    tags: ['Python', 'PyTest', 'Testing', 'Object-Oriented Programing'],
     viewLink:
       'https://medium.com/better-programming/what-is-polymorphism-and-how-to-implement-it-in-python-391683307543?source=friends_link&sk=5c80415f07d5b2ab465637d6e17556db',
-    length: '4',
-    date: 'Jan 27 2029',
+    length: ' • 4 min read',
+    date: 'Jan 29',
   },
   {
     imagePath: require('../assets/img/projects/herokuDemo.jpg'),
@@ -166,34 +163,9 @@ export const ARTICLES_WRITTEN = [
     title: 'How Python Lazily Evaluates Boolean-Based Expressions',
     description:
       'Medium Article about how Python use short-circuiting to lazily evaluate boolean-based expressions at run-time. Article was published on my behalf by Better Programming.',
-    tags: ['Python'],
     viewLink:
       'https://medium.com/better-programming/how-python-lazily-evaluates-boolean-based-expressions-fc9d55d20d8d?source=friends_link&sk=3b5620a2da66a77052e3881f4aa6b5b9',
-    length: '4',
-    date: 'Jan 27 2020',
-  },
-  {
-    imagePath: require('../assets/img/projects/herokuDemo.jpg'),
-    imageAltDescription: 'Terminal Screenshot of failing unit test',
-    title: 'Unit Testing in Python',
-    description:
-      'Medium Article about what unit testing and code coverage are, and how to implement them in Python using PyTest & Coveralls.',
-    tags: ['Python', 'PyTest', 'Testing', 'Code Coverage'],
-    viewLink:
-      'https://medium.com/@nathanpatnam/what-is-unit-testing-code-coverage-and-how-to-implement-and-use-them-in-python-a8f029558fe7',
-    length: '4',
-    date: 'Feb 17 2018',
-  },
-  {
-    imagePath: require('../assets/img/projects/herokuDemo.jpg'),
-    imageAltDescription: 'TODO',
-    title: 'My experiences freelancing (first 30 days)',
-    description:
-      'Medium article about what I learned during my first 30 days of web freelancing.',
-    tags: ['Web Development', 'Freelance'],
-    viewLink:
-      'https://medium.com/@nathanpatnam/my-experiences-freelancing-first-30-days-43e0ef0ac2ca',
-    length: '4',
-    date: 'Feb 15 2018',
+    length: ' • 5 min read',
+    date: 'Jan 27',
   },
 ];

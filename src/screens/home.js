@@ -3,6 +3,7 @@ import '../styles/screens/projects.css';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
+import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { ARTICLES_WRITTEN } from '../constants/content';
 import Card from '@material-ui/core/Card';
@@ -10,6 +11,8 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Avatar from '@material-ui/core/Avatar';
+
+import { _openLinkInNewTab } from '../helpers/helpers';
 
 export const AboutMe = () => {
   return (
@@ -50,61 +53,91 @@ export const FeaturedProjects = () => {
 };
 
 export const FeaturedArticles = () => {
-  const foo = makeStyles({
+  const styles = makeStyles({
     root: {
-      maxWidth: 345,
+      maxWidth: 300,
+      boxShadow: 'none',
     },
     media: {
-      height: 140,
+      height: 160,
+    },
+    articleDescription: {
+      height: 120,
+    },
+    title: {
+      height: 50,
+    },
+    body: {
+      padding: 0,
     },
   });
-  const classes = foo();
+  const classes = styles();
 
   return (
     <Fragment>
-      <Typography
-        component='div'
-        align='left'
-        style={{ backgroundColor: '#cfe8fc' }}
-      >
-        Hot of the Press ~ A couple of articles I've written about tech on
-        Medium
+      <Typography component='div' align='left'>
+        Recent Medium Articles
       </Typography>
-      {ARTICLES_WRITTEN.map((articleWritten) => {
-        return (
-          <Card className={classes.root} key={articleWritten.title}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image={require('../assets/img/projects/unitTesting.png')}
-                title='Contemplative Reptile'
-              />
-              <CardContent>
-                <Typography gutterBottom component='h2' align={'left'}>
-                  {articleWritten.title}
-                </Typography>
-                <Typography
-                  variant='body2'
-                  color='textSecondary'
-                  align={'left'}
-                  component='p'
-                >
-                  {articleWritten.description}
-                </Typography>
+      <Grid container justify='center'>
+        {ARTICLES_WRITTEN.map((articleWritten) => {
+          const openMediumArticleInNewTab = () => {
+            _openLinkInNewTab(articleWritten.viewLink);
+          };
 
-                <div>
-                  <Avatar alt='Remy Sharp' src='/static/images/avatar/1.jpg' />
-                  <div>
-                    Nathan Patnam
-                    {articleWritten.date}
-                    {articleWritten.length}
-                  </div>
-                </div>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        );
-      })}
+          return (
+            <Grid item key={articleWritten.title} sm={6} md={6} lg={3} xl={3}>
+              <Grid container justify='center' alignItems='center'>
+                <Card className={classes.root}>
+                  <CardActionArea onClick={openMediumArticleInNewTab}>
+                    <CardMedia
+                      className={classes.media}
+                      image={require('../assets/img/projects/unitTesting.png')}
+                      title='Contemplative Reptile'
+                    />
+                    <CardContent className={classes.body}>
+                      <Typography
+                        gutterBottom
+                        className={classes.title}
+                        component='h2'
+                        align={'left'}
+                      >
+                        {articleWritten.title}
+                      </Typography>
+                      <Typography
+                        variant='body2'
+                        color='textSecondary'
+                        align={'left'}
+                        component='p'
+                        className={classes.articleDescription}
+                      >
+                        {articleWritten.description}
+                      </Typography>
+
+                      <Grid container>
+                        <Grid item xs={3}>
+                          <Avatar
+                            alt='Headshot of Nathan Patnam smiling'
+                            src='/static/images/avatar/1.jpg'
+                          />
+                        </Grid>
+
+                        <Grid item xs={9}>
+                          <Typography variant='subtitle2' align={'left'}>
+                            Nathan Patnam
+                            <br />
+                            {articleWritten.date}
+                            {articleWritten.length}
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Grid>
+            </Grid>
+          );
+        })}
+      </Grid>
     </Fragment>
   );
 };
