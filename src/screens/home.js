@@ -2,6 +2,9 @@ import React, { Fragment } from 'react';
 import '../styles/screens/projects.css';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+import ContactForm from '../components/contact';
+import ProfilePicture from '../assets/img/me/profile_picture.png';
 
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
@@ -17,23 +20,27 @@ import { _openLinkInNewTab } from '../helpers/helpers';
 export const AboutMe = () => {
   return (
     <Fragment>
-      <Typography
-        component='div'
-        align='left'
-        style={{ backgroundColor: '#cfe8fc' }}
-      >
-        I'm an experienced software engineer who is passionate about building
-        tools to increase developer productivity and empower users to achieve
-        more.
-      </Typography>
-      <Typography
-        component='div'
-        align='left'
-        style={{ backgroundColor: '#cfe8fc' }}
-      >
-        I'm currently a Full-Stack Engineer @ Salesforce and pursuing a Masters
-        in Computer Science at Georgia Tech.
-      </Typography>
+      <Grid container>
+        <Grid item xs={12} md={6}>
+          <Box pt={5}>
+            <Typography align='left'>
+              I'm an experienced software engineer who is passionate about
+              building tools to increase developer productivity and empower
+              users to achieve more.
+            </Typography>
+            <Typography align='left'>
+              Currently a Full-Stack Engineer @Salesforce and pursuing a Masters
+              in Computer Science at Georgia Tech.
+            </Typography>
+          </Box>
+
+          <div>Some of my Previous Employers</div>
+        </Grid>
+
+        <Grid item xs={12} md={6}>
+          <img src={ProfilePicture} />
+        </Grid>
+      </Grid>
     </Fragment>
   );
 };
@@ -148,6 +155,7 @@ const Home = () => {
       <AboutMe />
       <FeaturedProjects />
       <FeaturedArticles />
+      <ContactForm />
     </Container>
   );
 };
