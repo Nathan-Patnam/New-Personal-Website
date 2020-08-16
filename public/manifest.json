@@ -1,6 +1,10 @@
 {
-  "short_name": "Nathan Patnam",
+  "short_name": "Nathan's Portfolio",
+  "categories": [
+    "personalization"
+  ],
   "name": "Nathan Patnam Portfolio",
+  "description": "Welcome to Nathan Patnam's portfolio. Nathan is currently a full-stack engineering at Salesforce and a Masters Student at Georgia Tech.",
   "icons": [],
   "start_url": ".",
   "display": "standalone",
