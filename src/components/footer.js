@@ -10,6 +10,8 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import { ReactComponent as MediumIcon } from '../assets/img/icons/medium.svg';
 import { IconButton } from '@material-ui/core';
 
+import { _openLinkInNewTab } from '../helpers/helpers';
+
 import { FOOTER_ICONS } from '../constants/content';
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const Icon = ({ type, link }) => {
   const openLinkInNewTab = () => {
-    window.open(link, '_blank');
+    _openLinkInNewTab(link);
   };
 
   switch (type) {
