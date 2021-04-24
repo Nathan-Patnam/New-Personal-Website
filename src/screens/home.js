@@ -21,12 +21,11 @@ export const AboutMe = () => {
   return (
     <Fragment>
       <Grid container>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={7}>
           <Box pt={5}>
-            <Typography align='left'>
-              I'm an experienced software engineer who is passionate about
-              building tools to increase developer productivity and empower
-              users to achieve more.
+            <Typography align='left' variant='h5'>
+              Hi, I'm Nathan! An experienced software engineer passionate about
+              building tools to empower people to achieve more.
             </Typography>
             <Typography align='left'>
               Currently a Full-Stack Engineer @Salesforce and pursuing a Masters
@@ -37,8 +36,8 @@ export const AboutMe = () => {
           <div>Some of my Previous Employers</div>
         </Grid>
 
-        <Grid item xs={12} md={6}>
-          <img src={ProfilePicture} />
+        <Grid item xs={12} md={5}>
+          <img src={ProfilePicture} alt={'Headshot of Nathan Patnam'} />
         </Grid>
       </Grid>
     </Fragment>
